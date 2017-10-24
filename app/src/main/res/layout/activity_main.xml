@@ -26,10 +26,18 @@
         android:text="Start SubActivity"
         android:onClick="startSubactivity"/>
     <Button
+        android:id="@+id/Button02"
         android:layout_below="@id/Button01"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Start 4thActicivity"
         android:onClick="start4thActivity"/>
+    <Button
+        android:id="@+id/Button03"
+        android:layout_below="@id/Button02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start ScrollViewActivity"
+        android:onClick="startScrollViewActivity"/>
 
 </RelativeLayout>
