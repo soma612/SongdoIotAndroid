@@ -19,10 +19,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
+        android:id="@+id/Button01"
         android:layout_below="@id/edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Start SubActivity"
         android:onClick="startSubactivity"/>
+    <Button
+        android:layout_below="@id/Button01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start 4thActicivity"
+        android:onClick="start4thActivity"/>
 
 </RelativeLayout>
