@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="26.0.2"
-        sha1="d8db588fb362416560dc3e11f90bed3722112382">
+        sha1="ab57799716c1ce246ccac3dcc9df9debd7aafc32">
         <dex dex="C:\Users\user\AndroidStudioProjects\helloWorld2\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_55f0677f87f595bf3772695ed7702bdd85fcb80d\classes.dex" />
     </item>
 

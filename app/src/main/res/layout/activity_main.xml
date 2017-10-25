@@ -39,5 +39,19 @@
         android:layout_height="wrap_content"
         android:text="Start ScrollViewActivity"
         android:onClick="startScrollViewActivity"/>
+    <Button
+        android:id="@+id/Button04"
+        android:layout_below="@id/Button03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start NaverOpenAPIActivity"
+        android:onClick="startNaverOpenAPIActivity"/>
+    <Button
+        android:id="@+id/Button05"
+        android:layout_below="@id/Button04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start DaumOpenAPIActivity"
+        android:onClick="startDaumOpenAPIActivity"/>
 
 </RelativeLayout>
