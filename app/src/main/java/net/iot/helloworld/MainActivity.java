@@ -3,6 +3,7 @@ package net.iot.helloworld;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.TextViewCompat;
@@ -31,6 +32,13 @@ public class MainActivity extends AppCompatActivity {
                 ActivityCompat.requestPermissions(this,
                         new String[]{Manifest.permission.CALL_PHONE}, 1);
             }
+        }
+        int permissionLocationCheck = ContextCompat.checkSelfPermission(this,Manifest.permission.ACCESS_FINE_LOCATION);
+        if(permissionLocationCheck !=PackageManager.PERMISSION_GRANTED){
+            ActivityCompat.requestPermissions(this, new String[]{
+                    Manifest.permission.ACCESS_FINE_LOCATION,
+                    Manifest.permission.ACCESS_COARSE_LOCATION
+            },2);
         }
     }
 
@@ -61,6 +69,18 @@ public class MainActivity extends AppCompatActivity {
 
     public void startDaumOpenAPIActivity(View view){
         Intent intent = new Intent(MainActivity.this, DaumOpenAPIActivity.class);
+        startActivity(intent);
+    }
+    public void startGoogleMapActivity(View view){
+        Intent intent = new Intent(MainActivity.this, GoogleMapActivity.class);
+        startActivity(intent);
+    }
+    public void startDatabaseActivity(View view){
+        Intent intent = new Intent(MainActivity.this, SQLiteDatabaseActivity.class);
+        startActivity(intent);
+    }
+    public void startSensorActivity(View view){
+        Intent intent = new Intent(MainActivity.this, SensorActivity.class);
         startActivity(intent);
     }
 

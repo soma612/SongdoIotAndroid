@@ -53,5 +53,26 @@
         android:layout_height="wrap_content"
         android:text="Start DaumOpenAPIActivity"
         android:onClick="startDaumOpenAPIActivity"/>
+    <Button
+        android:id="@+id/Button06"
+        android:layout_below="@id/Button05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start GoogleMapActivity"
+        android:onClick="startGoogleMapActivity"/>
+    <Button
+        android:id="@+id/Button07"
+        android:layout_below="@id/Button06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start DatabaseActivity"
+        android:onClick="startDatabaseActivity"/>
+    <Button
+        android:id="@+id/Button08"
+        android:layout_below="@id/Button07"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start SensorActivity"
+        android:onClick="startSensorActivity"/>
 
 </RelativeLayout>
